@@ -98,7 +98,7 @@
     enable = true;
     settings = {
       default_session = {
-        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --remember --cmd niri-session";
+        command = "${pkgs.tuigreet}/bin/tuigreet --time --remember --cmd niri-session";
         user = "greeter";
       };
     };
@@ -171,7 +171,8 @@
       noto-fonts
       noto-fonts-cjk-sans
       noto-fonts-color-emoji
-      (nerdfonts.override { fonts = [ "JetBrainsMono" "FiraCode" ]; })
+      nerd-fonts.jetbrains-mono
+      nerd-fonts.fira-code
     ];
     fontconfig.defaultFonts = {
       sansSerif = [ "Inter" "Noto Sans" ];
