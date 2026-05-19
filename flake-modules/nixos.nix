@@ -24,7 +24,7 @@
               useUserPackages = true;
               extraSpecialArgs = { inherit inputs; };
               # ── Ganti "user" dengan username kamu ──
-              users.user = import ../home;
+              users.heyiza = import ../home;
             };
           }
         ];

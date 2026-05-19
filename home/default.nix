@@ -16,8 +16,8 @@
 
   home = {
     # ── Ganti dengan username kamu ──
-    username = "user";
-    homeDirectory = "/home/user";
+    username = "heyiza";
+    homeDirectory = "/home/heyiza";
     stateVersion = "25.05";
   };
 

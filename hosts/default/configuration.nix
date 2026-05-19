@@ -91,10 +91,9 @@
   # ══════════════════════════════════════════
   #  User
   # ══════════════════════════════════════════
-  users.users.user = {
-    # Ganti "user" dengan username kamu
+  users.users.heyiza = {
     isNormalUser = true;
-    description = "User";
+    description = "Heyiza";
     extraGroups = [ "networkmanager" "wheel" "video" "audio" ];
     shell = pkgs.fish;
   };
