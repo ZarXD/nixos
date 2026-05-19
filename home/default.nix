@@ -18,7 +18,7 @@
     # ── Ganti dengan username kamu ──
     username = "heyiza";
     homeDirectory = "/home/heyiza";
-    stateVersion = "26.05";
+    stateVersion = "25.11";
   };
 
   programs.home-manager.enable = true;
