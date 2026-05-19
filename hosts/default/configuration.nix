@@ -45,6 +45,7 @@
   #  Niri Compositor
   # ══════════════════════════════════════════
   programs.niri.enable = true;
+  programs.niri.package = pkgs.niri;  # Pakai dari nixpkgs cache, biar gak compile
 
   # Niri sudah otomatis setup:
   # - polkit (+ KDE polkit agent)
