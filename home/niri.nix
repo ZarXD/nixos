@@ -63,8 +63,8 @@
 
     # ── Spawn at Startup ──────────────────────────────────
     spawn-at-startup = [
-      # Noctalia Shell (bar, dock, notifications, dll)
-      { command = [ "noctalia-qs" "-c" "noctalia-shell" ]; }
+      # Noctalia Shell — uncomment kalau module sudah enabled
+      # { command = [ "noctalia-qs" "-c" "noctalia-shell" ]; }
 
       # Wallpaper — ganti path sesuai selera
       { command = [ "swaybg" "-i" "${config.home.homeDirectory}/wallpapers/wallpaper.jpg" "-m" "fill" ]; }
