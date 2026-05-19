@@ -132,9 +132,9 @@
   # ── Git ────────────────────────────────────────────────
   programs.git = {
     enable = true;
-    userName = "Your Name";   # Ganti!
-    userEmail = "your@email.com"; # Ganti!
-    extraConfig = {
+    settings = {
+      user.name = "Your Name";       # Ganti!
+      user.email = "your@email.com"; # Ganti!
       init.defaultBranch = "main";
       pull.rebase = true;
       push.autoSetupRemote = true;
