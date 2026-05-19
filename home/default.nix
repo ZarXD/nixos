@@ -3,12 +3,12 @@
 
 {
   imports = [
-    # Noctalia Shell home module — uncomment kalau sudah confirmed working
-    # inputs.noctalia.homeModules.default
+    # Noctalia Shell home module
+    inputs.noctalia.homeModules.default
 
     # Niri, Noctalia, dan app configs
     ./niri.nix
-    # ./noctalia.nix  # depends on noctalia module above
+    ./noctalia.nix
     ./shell.nix
     ./packages.nix
     ./gtk.nix
