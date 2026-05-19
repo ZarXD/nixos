@@ -99,7 +99,7 @@
     binds = {
       # ─── Essentials ───
       "Mod+Return".action.spawn = "alacritty";
-      "Mod+D".action.spawn = "fuzzel";
+      "Mod+D".action.spawn = [ "sh" "-c" "qs -c noctalia-shell ipc call launcher toggle" ];
       "Mod+Shift+Q".action.close-window = {};
       "Mod+Shift+E".action.quit = {};
       "Mod+Shift+Slash".action.show-hotkey-overlay = {};

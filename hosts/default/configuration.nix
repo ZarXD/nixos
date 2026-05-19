@@ -116,7 +116,6 @@
     libnotify            # notify-send
 
     # Niri companion apps
-    fuzzel               # Application launcher
     swaylock-effects     # Lock screen
     grim                 # Screenshot utility
     slurp                # Region selector
