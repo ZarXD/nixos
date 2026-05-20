@@ -64,7 +64,7 @@
     # ── Spawn at Startup ──────────────────────────────────
     spawn-at-startup = [
       # Noctalia Shell (bar, dock, notifications, dll)
-      { command = [ "noctalia-qs" "-c" "noctalia-shell" ]; }
+      { command = [ "${inputs.noctalia.packages.${pkgs.system}.default}/bin/noctalia-qs" "-c" "noctalia-shell" ]; }
 
       # Wallpaper — ganti path sesuai selera
       { command = [ "swaybg" "-i" "${config.home.homeDirectory}/wallpapers/wallpaper.jpg" "-m" "fill" ]; }
@@ -99,7 +99,7 @@
     binds = {
       # ─── Essentials ───
       "Mod+Return".action.spawn = "alacritty";
-      "Mod+D".action.spawn = [ "sh" "-c" "qs -c noctalia-shell ipc call launcher toggle" ];
+      "Mod+D".action.spawn = [ "sh" "-c" "${inputs.noctalia.packages.${pkgs.system}.default}/bin/noctalia-qs -c noctalia-shell ipc call launcher toggle" ];
       "Mod+Shift+Q".action.close-window = {};
       "Mod+Shift+E".action.quit = {};
       "Mod+Shift+Slash".action.show-hotkey-overlay = {};
